@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <assert.h>
+
+void swap(char* a, char* b)
+{
+  char cTemp;
+  assert(a != NULL);
+  assert(b != NULL);
+  cTemp = *a;
+  a* = b*;
+  b* = cTemp;
+}
+
+void reverse(char* c)
+{
+  char* pcTemp;
+  assert(c != NULL);
+  
+  pcTemp = c;
+  while(c++); c--;
+  while(pcTemp > c) 
+    {
+      swap(pcTemp, c);
+      pcTemp++; c--;
+    }
+}
+
+
+int main(void)
+{
+
+  return 0;
+}

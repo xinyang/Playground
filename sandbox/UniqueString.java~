@@ -1,0 +1,21 @@
+public UniqueString
+{
+    public class {
+
+	public boolean isUnique(String s) 
+	{
+	    boolean isUnique = false;
+	    char[] cArray = s.toCharArray();
+	    Arrays.sort(cArray);
+	    for (int i = 0; i < s.length() - 1; i++)
+		if (cArray[i] == cArray[i+1]) isUnique = true;
+	    return isUnique;
+	}
+
+	public static void main(String[] args)
+	{
+	    
+	}
+
+    }
+}
