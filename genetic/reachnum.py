@@ -39,6 +39,12 @@ def decode(strBits):
             strExprsn.append(CHARSET[indexInCharSet])
     return strExprsn
 
+def isNumber(char):
+    return char in CHARSET[:10]
+    
+def isOperator(char):
+    return char in CHARSET[10:14]
+    
 def evaluate(strExprsn):
     
     
